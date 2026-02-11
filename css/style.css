@@ -148,7 +148,7 @@ img {
 }
 
 .hero-image-wrapper {
-  max-width: 480px;
+  max-width: 900px;
   margin: 0 auto 40px;
   border-radius: 16px;
   overflow: hidden;
@@ -473,7 +473,7 @@ img {
   }
 
   .hero-image-wrapper {
-    max-width: 320px;
+    max-width: 100%;
   }
 
   .features-grid {
