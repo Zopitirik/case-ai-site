@@ -121,6 +121,9 @@ img {
   background: var(--bg-card);
 }
 
+[data-lang="en"] .lang-tr { display: none; }
+[data-lang="tr"] .lang-en { display: none; }
+
 .nav-links {
   display: flex;
   gap: 20px;
