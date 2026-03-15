@@ -30,7 +30,7 @@
       <!-- ===== ENGLISH ===== -->
       <div class="lang-en">
       <h1>Privacy Policy</h1>
-      <p>Last updated: February 27, 2026</p>
+      <p>Last updated: March 15, 2026</p>
       <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
       <p>We use Your Personal Data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy.</p>
 
@@ -89,6 +89,15 @@
       </ul>
       <p>Submitting feedback is entirely voluntary. You may skip the feedback form at any time without any consequence to Your use of the Service. This data is used exclusively to improve the Application and is not shared with third parties for marketing purposes.</p>
 
+      <h4>AI Interrogation Data</h4>
+      <p>Case AI features an AI-powered free-text interrogation system in select cases. When You use this feature, We collect the following information:</p>
+      <ul>
+        <li><p><strong>Interrogation Questions:</strong> The free-text questions You type to interrogate suspects within the game. These questions are sent to Anthropic's API for AI-generated responses and are temporarily processed on Anthropic's servers.</p></li>
+        <li><p><strong>Session Context:</strong> Limited game context (suspect identity, discovered evidence) is sent alongside Your questions to generate contextually appropriate responses. This context does not include Your personal identity.</p></li>
+        <li><p><strong>Interaction Logs:</strong> We store AI interrogation logs (questions and responses) in Our backend (Supabase) linked to Your anonymized user ID. These logs are used to enforce per-session question limits and to improve the AI system.</p></li>
+      </ul>
+      <p>AI interrogation data is not used for advertising or marketing purposes. Questions You type are processed by Anthropic's API and are subject to Anthropic's privacy policy. We do not sell or share Your interrogation content with third parties beyond what is necessary to deliver the feature.</p>
+
       <h4>Third-Party SDKs and Services</h4>
       <p>Our Application integrates the following third-party software development kits (SDKs) and services, each of which may collect data as described below:</p>
       <ul>
@@ -99,6 +108,7 @@
         <li><p><strong>Expo:</strong> Our Application is built using the Expo framework, which may collect anonymous usage and diagnostic data. For more information, please visit <a href="https://expo.dev/privacy">Expo Privacy Policy</a>.</p></li>
         <li><p><strong>Expo Push Notifications (Apple Push Notification service / APNs):</strong> If You grant permission for push notifications, We use Expo's push notification infrastructure, which delivers notifications via Apple Push Notification service (APNs) on iOS. We collect and store Your Expo Push Token in Our backend (Supabase) solely to identify Your device for notification delivery. You can disable push notifications at any time through the Application's settings or Your device's system settings. For more information, please visit <a href="https://expo.dev/privacy">Expo Privacy Policy</a> and <a href="https://www.apple.com/privacy/">Apple Privacy Policy</a>.</p></li>
         <li><p><strong>Apple In-App Purchases (StoreKit):</strong> Our Application offers in-app purchases processed entirely through Apple's App Store payment system. We do not collect or store Your payment information (such as credit card numbers or billing addresses). All payment processing is handled by Apple. We only receive transaction confirmation data, such as purchase receipts, transaction identifiers, and subscription status, to verify and deliver purchased content. For more information, please visit <a href="https://www.apple.com/privacy/">Apple Privacy Policy</a>.</p></li>
+        <li><p><strong>Anthropic:</strong> We use Anthropic's Claude API to power the AI interrogation feature in select cases. When You use free-text interrogation, Your questions and limited game context are sent to Anthropic's servers for processing. Anthropic processes this data to generate AI responses. This data is not used to train Anthropic's models by default. For more information, please visit <a href="https://www.anthropic.com/privacy">Anthropic Privacy Policy</a>.</p></li>
       </ul>
 
       <h4>Data Collected for Apple App Store Requirements</h4>
@@ -114,7 +124,8 @@
         <tr><td>Performance Data</td><td>App diagnostics and optimization</td><td>No</td></tr>
         <tr><td>Product Interaction</td><td>Analytics, service improvement</td><td>No</td></tr>
         <tr><td>Purchase History</td><td>In-app purchases, subscription management</td><td>Yes</td></tr>
-        <tr><td>User Content</td><td>In-app feedback improvement (voluntary)</td><td>No</td></tr>
+        <tr><td>User Content (Feedback)</td><td>In-app feedback improvement (voluntary)</td><td>No</td></tr>
+        <tr><td>User Content (AI Interrogation)</td><td>AI-powered suspect interrogation feature; processed via Anthropic API</td><td>No</td></tr>
       </table>
 
       <h3>In-App Purchases</h3>
@@ -245,7 +256,7 @@
       <!-- ===== TURKISH ===== -->
       <div class="lang-tr">
       <h1>Gizlilik Politikası</h1>
-      <p>Son güncelleme: 27 Şubat 2026</p>
+      <p>Son güncelleme: 15 Mart 2026</p>
       <p>Bu Gizlilik Politikası, Hizmeti kullandığınızda bilgilerinizin toplanması, kullanılması ve ifşa edilmesine ilişkin politika ve prosedürlerimizi açıklamakta; gizlilik haklarınız ve yasaların sizi nasıl koruduğu hakkında bilgi vermektedir.</p>
       <p>Hizmeti sağlamak ve geliştirmek amacıyla Kişisel Verilerinizi kullanıyoruz. Hizmeti kullanarak, bu Gizlilik Politikası kapsamında bilgilerin toplanmasını ve kullanılmasını kabul etmiş olursunuz.</p>
 
@@ -304,6 +315,15 @@
       </ul>
       <p>Geri bildirim göndermek tamamen isteğe bağlıdır. Hizmeti kullanımınızı etkilemeksizin geri bildirim formunu istediğiniz zaman atlayabilirsiniz. Bu veriler yalnızca Uygulamayı geliştirmek amacıyla kullanılır ve pazarlama amacıyla üçüncü taraflarla paylaşılmaz.</p>
 
+      <h4>Yapay Zeka Sorgulama Verileri</h4>
+      <p>Case AI, belirli vakalarda yapay zeka destekli serbest metin sorgulama özelliği sunar. Bu özelliği kullandığınızda aşağıdaki bilgileri toplayabiliriz:</p>
+      <ul>
+        <li><p><strong>Sorgulama Soruları:</strong> Oyun içinde şüphelileri sorgulamak amacıyla yazdığınız serbest metin sorular. Bu sorular, yapay zeka tarafından oluşturulan yanıtlar için Anthropic'in API'sine gönderilir ve Anthropic'in sunucularında geçici olarak işlenir.</p></li>
+        <li><p><strong>Oturum Bağlamı:</strong> Bağlama uygun yanıtlar üretmek amacıyla sorularınızla birlikte sınırlı oyun bağlamı (şüpheli kimliği, keşfedilen deliller) gönderilir. Bu bağlam, kişisel kimliğinizi içermez.</p></li>
+        <li><p><strong>Etkileşim Günlükleri:</strong> Yapay zeka sorgulama günlükleri (sorular ve yanıtlar), oturum başına soru limitini uygulamak ve yapay zeka sistemini geliştirmek amacıyla arka uç sistemimizde (Supabase) anonimleştirilmiş kullanıcı kimliğinize bağlı olarak saklanır.</p></li>
+      </ul>
+      <p>Yapay zeka sorgulama verileri reklam veya pazarlama amacıyla kullanılmaz. Yazdığınız sorular Anthropic'in API'si tarafından işlenir ve Anthropic'in gizlilik politikasına tabidir. Sorgulama içeriğinizi, özelliğin sunulması için zorunlu olanın ötesinde üçüncü taraflarla satmıyor veya paylaşmıyoruz.</p>
+
       <h4>Üçüncü Taraf SDK'lar ve Hizmetler</h4>
       <p>Uygulamamız, aşağıda açıklanan şekillerde veri toplayabilen üçüncü taraf yazılım geliştirme kitleri (SDK'lar) ve hizmetleri entegre etmektedir:</p>
       <ul>
@@ -314,6 +334,7 @@
         <li><p><strong>Expo:</strong> Uygulamamız Expo çerçevesi kullanılarak geliştirilmiştir; Expo anonim kullanım ve tanılama verileri toplayabilir. Daha fazla bilgi için <a href="https://expo.dev/privacy">Expo Gizlilik Politikası</a>'nı ziyaret edin.</p></li>
         <li><p><strong>Expo Push Bildirimleri (Apple Push Notification service / APNs):</strong> Anlık bildirimlere izin vermeniz halinde, iOS'ta Apple Push Notification service (APNs) aracılığıyla bildirim ileten Expo'nun push bildirim altyapısını kullanıyoruz. Expo Push Token'ınızı arka uç sistemimizde (Supabase) yalnızca bildirim teslimatı için cihazınızı tanımlamak amacıyla saklıyoruz. Push bildirimleri, Uygulama ayarlarından veya cihazınızın sistem ayarlarından dilediğiniz zaman devre dışı bırakılabilir. Daha fazla bilgi için <a href="https://expo.dev/privacy">Expo Gizlilik Politikası</a> ve <a href="https://www.apple.com/privacy/">Apple Gizlilik Politikası</a>'nı ziyaret edin.</p></li>
         <li><p><strong>Apple Uygulama İçi Satın Almalar (StoreKit):</strong> Uygulamamız, tamamen Apple'ın App Store ödeme sistemi aracılığıyla işlenen uygulama içi satın almalar sunmaktadır. Kredi kartı numarası veya fatura adresi gibi ödeme bilgilerinizi toplamıyor, saklamıyor veya bunlara erişmiyoruz. Tüm ödeme işlemleri Apple tarafından yürütülür. Satın alınan içerikleri doğrulamak ve teslim etmek amacıyla yalnızca satın alma makbuzları, işlem tanımlayıcıları ve abonelik durumu gibi işlem onay verilerini alıyoruz. Daha fazla bilgi için <a href="https://www.apple.com/privacy/">Apple Gizlilik Politikası</a>'nı ziyaret edin.</p></li>
+        <li><p><strong>Anthropic:</strong> Belirli vakalardaki yapay zeka sorgulama özelliğini desteklemek amacıyla Anthropic'in Claude API'sini kullanıyoruz. Serbest metin sorgulama özelliğini kullandığınızda sorularınız ve sınırlı oyun bağlamı işlenmek üzere Anthropic'in sunucularına gönderilir. Anthropic, yapay zeka yanıtları oluşturmak amacıyla bu verileri işler. Bu veriler varsayılan olarak Anthropic'in modellerini eğitmek için kullanılmaz. Daha fazla bilgi için <a href="https://www.anthropic.com/privacy">Anthropic Gizlilik Politikası</a>'nı ziyaret edin.</p></li>
       </ul>
 
       <h4>Apple App Store Gereksinimleri İçin Toplanan Veriler</h4>
@@ -329,7 +350,8 @@
         <tr><td>Performans Verileri</td><td>Uygulama tanılama ve optimizasyon</td><td>Hayır</td></tr>
         <tr><td>Ürün Etkileşimi</td><td>Analitik, hizmet iyileştirme</td><td>Hayır</td></tr>
         <tr><td>Satın Alma Geçmişi</td><td>Uygulama içi satın almalar, abonelik yönetimi</td><td>Evet</td></tr>
-        <tr><td>Kullanıcı İçeriği</td><td>Uygulama içi geri bildirim iyileştirme (isteğe bağlı)</td><td>Hayır</td></tr>
+        <tr><td>Kullanıcı İçeriği (Geri Bildirim)</td><td>Uygulama içi geri bildirim iyileştirme (isteğe bağlı)</td><td>Hayır</td></tr>
+        <tr><td>Kullanıcı İçeriği (YZ Sorgulama)</td><td>Yapay zeka destekli şüpheli sorgulama özelliği; Anthropic API aracılığıyla işlenir</td><td>Hayır</td></tr>
       </table>
 
       <h3>Uygulama İçi Satın Almalar</h3>
