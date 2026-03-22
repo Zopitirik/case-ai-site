@@ -18,7 +18,18 @@
         Case AI
       </a>
       <div class="header-right">
-        <button id="lang-toggle" class="lang-toggle" aria-label="Toggle language">TR</button>
+        <div id="lang-dropdown" class="lang-dropdown">
+        <button id="lang-toggle" class="lang-toggle" aria-label="Select language">
+          <span id="lang-current">EN</span>
+          <span class="lang-toggle-arrow">▼</span>
+        </button>
+        <div class="lang-menu">
+          <div class="lang-option" data-value="en">EN</div>
+          <div class="lang-option" data-value="tr">TR</div>
+          <div class="lang-option" data-value="de">DE</div>
+          <div class="lang-option" data-value="fr">FR</div>
+        </div>
+      </div>
       </div>
     </div>
   </header>

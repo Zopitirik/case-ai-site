@@ -23,7 +23,18 @@
           <li><a href="#cases" data-en="Cases" data-tr="Davalar" data-de="Fälle" data-fr="Affaires">Cases</a></li>
           <li><a href="#download" data-en="Download" data-tr="İndir" data-de="Herunterladen" data-fr="Télécharger">Download</a></li>
         </ul>
-        <button id="lang-toggle" class="lang-toggle" aria-label="Toggle language">TR</button>
+        <div id="lang-dropdown" class="lang-dropdown">
+        <button id="lang-toggle" class="lang-toggle" aria-label="Select language">
+          <span id="lang-current">EN</span>
+          <span class="lang-toggle-arrow">▼</span>
+        </button>
+        <div class="lang-menu">
+          <div class="lang-option" data-value="en">EN</div>
+          <div class="lang-option" data-value="tr">TR</div>
+          <div class="lang-option" data-value="de">DE</div>
+          <div class="lang-option" data-value="fr">FR</div>
+        </div>
+      </div>
       </div>
     </div>
   </header>
