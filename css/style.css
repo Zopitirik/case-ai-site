@@ -121,8 +121,21 @@ img {
   background: var(--bg-card);
 }
 
-[data-lang="en"] .lang-tr { display: none; }
-[data-lang="tr"] .lang-en { display: none; }
+[data-lang="en"] .lang-tr,
+[data-lang="en"] .lang-de,
+[data-lang="en"] .lang-fr { display: none; }
+
+[data-lang="tr"] .lang-en,
+[data-lang="tr"] .lang-de,
+[data-lang="tr"] .lang-fr { display: none; }
+
+[data-lang="de"] .lang-en,
+[data-lang="de"] .lang-tr,
+[data-lang="de"] .lang-fr { display: none; }
+
+[data-lang="fr"] .lang-en,
+[data-lang="fr"] .lang-tr,
+[data-lang="fr"] .lang-de { display: none; }
 
 .nav-links {
   display: flex;
@@ -274,6 +287,7 @@ img {
   border-radius: 14px;
   overflow: hidden;
   transition: transform 0.2s, border-color 0.2s;
+  position: relative;
 }
 
 .case-card:hover {
@@ -301,6 +315,116 @@ img {
   font-size: 0.88rem;
   color: var(--text-secondary);
   line-height: 1.5;
+}
+
+.case-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.case-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.case-tag.difficulty-medium { border-color: #4ade80; color: #4ade80; }
+.case-tag.difficulty-hard   { border-color: #fb923c; color: #fb923c; }
+.case-tag.difficulty-expert { border-color: #f87171; color: #f87171; }
+.case-tag.coming-soon       { border-color: var(--primary); color: var(--primary); }
+
+.case-ai-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.case-card-placeholder {
+  width: 100%;
+  height: 200px;
+  background: linear-gradient(135deg, #161e2e 0%, #0e131c 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.case-card-placeholder-icon {
+  font-size: 4.5rem;
+  opacity: 0.12;
+  color: var(--primary);
+  font-weight: 800;
+  line-height: 1;
+  user-select: none;
+}
+
+/* ============================================================================
+   HOW IT WORKS
+   ============================================================================ */
+
+.how-it-works {
+  padding: 80px 0;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.step {
+  text-align: center;
+  position: relative;
+}
+
+.step-number {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--primary);
+  opacity: 0.25;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.step h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.step p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+@media (max-width: 768px) {
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
 }
 
 /* ============================================================================
