@@ -644,6 +644,282 @@ img {
 }
 
 /* ============================================================================
+   HERO AI PILL + FREE NOTE
+   ============================================================================ */
+
+.hero-ai-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(23, 84, 207, 0.12);
+  border: 1px solid rgba(23, 84, 207, 0.4);
+  color: #7ba7f7;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 16px;
+}
+
+.hero-free-note {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin-top: 14px;
+  opacity: 0.7;
+}
+
+/* ============================================================================
+   WHY DIFFERENT SECTION
+   ============================================================================ */
+
+.why-different {
+  padding: 80px 0;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 780px;
+  margin: 0 auto;
+}
+
+.why-col {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 28px 24px;
+}
+
+.why-yes {
+  border-color: var(--primary);
+  background: rgba(23, 84, 207, 0.06);
+}
+
+.why-col-header {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--text-secondary);
+}
+
+.why-yes .why-col-header {
+  color: var(--primary);
+}
+
+.why-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.why-col li {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 1.5;
+}
+
+.why-col li::before {
+  flex-shrink: 0;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-top: 1px;
+}
+
+.why-no li::before {
+  content: "✗";
+  color: #475569;
+}
+
+.why-yes li::before {
+  content: "✓";
+  color: #4ade80;
+}
+
+.why-no li {
+  color: var(--text-secondary);
+  opacity: 0.65;
+}
+
+.why-yes li {
+  color: var(--text);
+}
+
+/* ============================================================================
+   SUSPECT VOICES SECTION
+   ============================================================================ */
+
+.suspect-voices {
+  padding: 80px 0;
+}
+
+.suspect-voices-subtitle {
+  text-align: center;
+  color: var(--text-secondary);
+  max-width: 500px;
+  margin: -24px auto 40px;
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+.voices-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.voice-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px 20px;
+  transition: border-color 0.2s;
+}
+
+.voice-card:hover {
+  border-color: var(--primary);
+}
+
+.voice-card-vera {
+  border-color: rgba(23, 84, 207, 0.35);
+}
+
+.voice-role {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 16px;
+  opacity: 0.85;
+}
+
+.voice-exchange {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.voice-q {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  padding: 8px 12px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 6px;
+  border-left: 2px solid var(--border);
+  line-height: 1.5;
+}
+
+.voice-q::before {
+  content: "↳ ";
+  font-weight: 700;
+  color: #7ba7f7;
+  font-size: 0.78rem;
+}
+
+.voice-a {
+  font-size: 0.88rem;
+  color: var(--text);
+  line-height: 1.55;
+  font-style: italic;
+  padding-left: 4px;
+}
+
+/* ============================================================================
+   CASE FREE BADGE + DURATION TAG
+   ============================================================================ */
+
+.case-free-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #4ade80;
+  color: #071a0f;
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 3px 9px;
+  border-radius: 20px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.case-tag.case-duration {
+  color: var(--text-secondary);
+  border-color: var(--border);
+  opacity: 0.7;
+}
+
+/* ============================================================================
+   CTA MINI (after cases)
+   ============================================================================ */
+
+.cta-mini {
+  padding: 48px 0;
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+
+.cta-mini p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 24px;
+}
+
+.cta-mini .cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--primary);
+  color: #fff;
+  padding: 14px 32px;
+  border-radius: 12px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  transition: background 0.2s, transform 0.15s;
+  text-decoration: none;
+}
+
+.cta-mini .cta-btn:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+/* ============================================================================
+   CTA VALUE TRIO
+   ============================================================================ */
+
+.cta-value-trio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.cta-value-trio span {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  padding: 0 16px;
+  border-right: 1px solid var(--border);
+  line-height: 1;
+}
+
+.cta-value-trio span:last-child {
+  border-right: none;
+}
+
+/* ============================================================================
    MASTER ARC SECTION
    ============================================================================ */
 
@@ -794,8 +1070,34 @@ img {
 
   .features,
   .cases,
-  .cta-section {
+  .cta-section,
+  .why-different,
+  .suspect-voices {
     padding: 50px 0;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .voices-grid {
+    grid-template-columns: 1fr;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+
+  .suspect-voices-subtitle {
+    margin-bottom: 28px;
+  }
+
+  .cta-value-trio {
+    gap: 8px 0;
+  }
+
+  .cta-value-trio span {
+    padding: 4px 12px;
   }
 
   .legal-page {
