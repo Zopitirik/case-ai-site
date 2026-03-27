@@ -7,6 +7,14 @@
   var LANGS = ['en', 'tr', 'de', 'fr'];
   var LABELS = { en: 'EN', tr: 'TR', de: 'DE', fr: 'FR' };
 
+  // App Store URLs — dil eklendiğinde buraya da eklenmeli
+  var APP_STORE_URLS = {
+    tr: 'https://apps.apple.com/tr/app/case-ai/id6759069717',
+    en: 'https://apps.apple.com/us/app/case-ai/id6759069717',
+    de: 'https://apps.apple.com/de/app/case-ai/id6759069717',
+    fr: 'https://apps.apple.com/fr/app/case-ai/id6759069717',
+  };
+
   function getDefaultLang() {
     var stored = localStorage.getItem(STORAGE_KEY);
     if (LANGS.indexOf(stored) !== -1) return stored;
@@ -27,6 +35,11 @@
     localStorage.setItem(STORAGE_KEY, lang);
     var btn = document.getElementById('lang-current');
     if (btn) btn.textContent = LABELS[lang];
+    // App Store butonlarını dile göre güncelle
+    var storeUrl = APP_STORE_URLS[lang] || APP_STORE_URLS['en'];
+    document.querySelectorAll('.js-store-btn').forEach(function (el) {
+      el.href = storeUrl;
+    });
     // Mark active item
     document.querySelectorAll('.lang-option').forEach(function (el) {
       el.classList.toggle('active', el.getAttribute('data-value') === lang);
