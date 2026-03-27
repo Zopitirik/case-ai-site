@@ -38,7 +38,7 @@
     // App Store butonlarını dile göre güncelle
     var storeUrl = APP_STORE_URLS[lang] || APP_STORE_URLS['en'];
     document.querySelectorAll('.js-store-btn').forEach(function (el) {
-      el.href = storeUrl;
+      el.setAttribute('href', storeUrl);
     });
     // Mark active item
     document.querySelectorAll('.lang-option').forEach(function (el) {
