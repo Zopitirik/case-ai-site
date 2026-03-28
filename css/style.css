@@ -184,19 +184,28 @@ img {
 
 [data-lang="en"] .lang-tr,
 [data-lang="en"] .lang-de,
-[data-lang="en"] .lang-fr { display: none; }
+[data-lang="en"] .lang-fr,
+[data-lang="en"] .lang-es { display: none; }
 
 [data-lang="tr"] .lang-en,
 [data-lang="tr"] .lang-de,
-[data-lang="tr"] .lang-fr { display: none; }
+[data-lang="tr"] .lang-fr,
+[data-lang="tr"] .lang-es { display: none; }
 
 [data-lang="de"] .lang-en,
 [data-lang="de"] .lang-tr,
-[data-lang="de"] .lang-fr { display: none; }
+[data-lang="de"] .lang-fr,
+[data-lang="de"] .lang-es { display: none; }
 
 [data-lang="fr"] .lang-en,
 [data-lang="fr"] .lang-tr,
-[data-lang="fr"] .lang-de { display: none; }
+[data-lang="fr"] .lang-de,
+[data-lang="fr"] .lang-es { display: none; }
+
+[data-lang="es"] .lang-en,
+[data-lang="es"] .lang-tr,
+[data-lang="es"] .lang-de,
+[data-lang="es"] .lang-fr { display: none; }
 
 .nav-links {
   display: flex;

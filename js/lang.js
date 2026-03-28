@@ -4,8 +4,8 @@
 
 (function () {
   var STORAGE_KEY = 'caseai-lang';
-  var LANGS = ['en', 'tr', 'de', 'fr'];
-  var LABELS = { en: 'EN', tr: 'TR', de: 'DE', fr: 'FR' };
+  var LANGS = ['en', 'tr', 'de', 'fr', 'es'];
+  var LABELS = { en: 'EN', tr: 'TR', de: 'DE', fr: 'FR', es: 'ES' };
 
   // App Store URLs — dil eklendiğinde buraya da eklenmeli
   var APP_STORE_URLS = {
@@ -13,6 +13,7 @@
     en: 'https://apps.apple.com/us/app/case-ai/id6759069717',
     de: 'https://apps.apple.com/de/app/case-ai/id6759069717',
     fr: 'https://apps.apple.com/fr/app/case-ai/id6759069717',
+    es: 'https://apps.apple.com/es/app/case-ai/id6759069717',
   };
 
   function getDefaultLang() {
@@ -24,6 +25,7 @@
     if (nav.startsWith('tr')) return 'tr';
     if (nav.startsWith('de')) return 'de';
     if (nav.startsWith('fr')) return 'fr';
+    if (nav.startsWith('es')) return 'es';
     return 'en';
   }
 
