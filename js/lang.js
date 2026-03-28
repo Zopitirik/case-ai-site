@@ -16,6 +16,8 @@
   };
 
   function getDefaultLang() {
+    var param = new URLSearchParams(window.location.search).get('lang');
+    if (param && LANGS.indexOf(param.toLowerCase()) !== -1) return param.toLowerCase();
     var stored = localStorage.getItem(STORAGE_KEY);
     if (LANGS.indexOf(stored) !== -1) return stored;
     var nav = (navigator.language || navigator.userLanguage || '').toLowerCase();
